@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  
+}
+.lhs{
+    width: 48vh;
+    margin-right: 200px;
+}
+.rhs{
+    width: 48vh;
+    margin-left: 200px;
+}
+img{
+    width: auto;
+    height: 550px;
+}
+h1{
+    color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-top: 2%;
+}

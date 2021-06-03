@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter your Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scroller">
+        
+        <ul> 
+            <div>Resume Builder</div>         
+            <li><a href= #personal>Personal Details</a></li>
+            <li><a href= #education>Education</a></li>
+            <li><a href= #work>Work Experience</a></li>
+            <li><a href= #skill>Skills</a></li>
+            <li><a href= #links>Links</a></li>
+
+        </ul>
+    </div> 
+    <form class="info" action="index.jsp" method="post" target="_blank">  
+    <div id = "personal">
+        <h1><span>P</span>ersonal <span>I</span>nformation</h1>
+        <input type="text" id="personal_info" placeholder="First Name"  name="f_name"><br>
+        <input type="text" id="personal_info" placeholder="Last Name"  name="l_name"><br>
+        <input type="email" id="personal_info" placeholder="Email"  name="email_id"><br>
+        <input type="number" id="personal_info" placeholder="Phone No."  name="phone_no"><br>
+        <input type="text" id="personal_info" placeholder="Address"  name="address"><br>
+        <input type="text" id="personal_info" placeholder="Profile / Summary "  name="profile" maxlength="100"><br>
+    </div>
+
+    <div  id = "education">
+        <h1><span>E</span>ducation</h1>
+        <h3>School Education</h3>
+        <input type="text" id="edu" placeholder="Institution Name"  name="school_name"><br>
+        <label>Start Date</label>
+        <input type="date" id="edu" placeholder="Start Date"  name="school_start" ><br>
+        <label>End Date</label>
+        <input type="date" id="schoolEnd" placeholder="End Date"  name="school_end"><br>
+        <input type="number" id="Schoolpercentage" placeholder="% or c.g.p.a in 10th"  name="school_marks"><br>
+            <h4>Currently Studying</h4>
+            <input type="checkbox" id="currentlyStudyingSchool">
+        <br>
+        <br>
+        
+        <h3>Junior College Education</h3><br>
+        <input type="text" id="jredu" placeholder="Institution Name"  name="jr_college_name"><br>
+        <label>Start Date</label>
+        <input type="date" id="clgStart" placeholder="Start Date"  name="jr_college_start"><br>
+        <label>End Date</label>
+        <input type="date" id="clgEnd" placeholder="End Date"  name="jr_college_end"><br>
+        <input type="number" id="Collegepercentage" placeholder="% or c.g.p.a in 12th"  name="jr_college_marks"><br>
+        <div class="checkbox">
+            <h4>Currently Studying</h4>   
+            <input type="checkbox" id="currentlyStudyingClg">
+        </div>
+        <br>
+
+        <h3 class="degreecollege">Degree College Education</h3><br>
+        <input type="text" id="sredu" placeholder="Institution Name"  name="sr_college_name"><br>
+        <label>Start Date</label>
+        <input type="date" id="degreeStartdate" placeholder="Start Date"  name="sr_college_start"><br>
+        <label>End Date</label>
+        <input type="date" id="degreeEnddate" placeholder="End Date" name="sr_college_end" ><br>
+        <input type="number" id="Degreepercentage" placeholder="% or c.g.p.a in Degree College" name="sr_college_marks"><br>
+        <div class="checkbox">
+            <h4>Currently Studying</h4>
+            <input type="checkbox" id="currentlyStudying"><br>
+        </div>
+
+    </div>
+
+    <div id="work">
+        <div id = "working">`
+            <h1><span>W</span>ork <span>E</span>xperience</h1>
+            <h3>Job #1</h3>
+            <input type="text" id="works" placeholder="Job Title" name="work1_title" required><br>
+            <input type="text" id="works" placeholder="Job Specifications" name="work1_specs" required><br>
+            <label>Start Date</label>
+            <input type="date" id="works" placeholder="Start Date" name="work1_start"required><br>
+            <label>End Date</label>
+            <input type="date" id="End" placeholder="End Date" name="work1_end" required><br>
+            <label for="currentlyWorking">Currently Working</label>
+            <input type="checkbox" id="currentlyWorking"><br>
+    
+    </div>
+    <br>
+    <div style="display: none;" id="form1">
+        
+        <h3>Job #2</h3><br>
+        <input type="text" id="works" placeholder="Job Title" name="work2_title" ><br>
+        <input type="text" id="works" placeholder="Job Specifications" name="work2_specs" ><br>
+        <label>Start Date</label>
+        <input type="date" id="works" placeholder="Start Date"  name="work2_start" ><br>
+        <label>End Date</label>
+        <input type="date" id="works" placeholder="End Date"  name="work2_end" ><br>
+    </div>
+    <br>
+    <div style="display: none;" id="form2">
+    
+        <h3>Job #3</h3><br>
+        <input type="text" id="works" placeholder="Job Title" name="work3_title"><br>
+        <input type="text" id="works" placeholder="Job Specifications" name="work3_specs"><br>
+        <label>Start Date</label>
+        <input type="date" id="works" placeholder="Start Date" name="work3_start"><br>
+        <label>End Date</label>
+        <input type="date" id="works" placeholder="End Date" name="work3_specs"><br>
+        
+    </div>
+    <div style="display: none;" id="form3">
+    
+        <h3>Job #4</h3><br>
+        <input type="text" id="works" placeholder="Job Title" name="work4_title"><br>
+        <input type="text" id="works" placeholder="Job Specifications" name="work4_specs"><br>
+        <label>Start Date</label>
+        <input type="date" id="works" placeholder="Start Date" name="work4_start"><br>
+        <label>End Date</label>
+        <input type="date" id="works" placeholder="End Date" name="work4_end"><br>
+        
+    </div>
+    <button type="button" id="add_button" onclick="add()">Add more Job Details</button>
+    </div>
+
+
+    <div id="skill">
+        <h1><span>S</span>kills</h1>
+          <div>
+            <h3>Skill #1</h3>
+            <div class="row">
+                <div class="col-5 Title">
+                    <input type="text" class="form-control" placeholder= "e.g. HTML" id= "Skill" name="skill_1">
+                </div>
+                <div class="col-5">
+                    <label for="level">Level</label>
+                    <select class="form-select" aria-label="Default select example"  name="skill_1_level">
+                        <option selected value="Beginner" class="others">Beginner</option>
+                        <option value="Intermediate" class="others">Intermediate</option>
+                        <option value="Advanced" class="others">Advanced</option>
+                    </select>
+                </div>
+            </div>
+          </div>
+          <br>
+          <div id="skill1" style="display: none;">
+            <h3>Skill #2</h3>
+            <div class="row">
+                <div class="col-5 Title">
+                    <input type="text" class="form-control" placeholder= "e.g. Python" id= "Skill" name="skill_2">
+                </div>
+                <div class="col-5">
+                    <label for="level">Level</label>
+                    <select class="form-select" aria-label="Default select example" name="skill_2_level">
+                        <option selected value="Beginner" class="others">Beginner</option>
+                        <option value="Intermediate" class="others">Intermediate</option>
+                        <option value="Advanced" class="others">Advanced</option>
+                    </select>
+                </div>
+            </div>
+          </div>
+         <br>
+          <div id="skill2" style="display: none;">
+            <h3>Skill #3</h3>
+            <div class="row">
+                <div class="col-5 Title">
+                    <input type="text" class="form-control" placeholder= "" id= "Skill" name="skill_3">
+                </div>
+                <div class="col-5">
+                    <label for="level">Level</label>
+                    <select class="form-select" aria-label="Default select example" name="skill_3_level">
+                        <option selected value="Beginner" class="others">Beginner</option>
+                        <option value="Intermediate" class="others">Intermediate</option>
+                        <option value="Advanced" class="others">Advanced</option>
+                    </select>
+                </div>
+            </div>
+          </div>
+          <br>
+          <div id="skill3" style="display: none;">
+            <h3>Skill #4</h3>
+            <div class="row">
+                <div class="col-5 Title">
+                    <input type="text" class="form-control" placeholder= "" id= "Skill" name="skill_4">
+                </div>
+                <div class="col-5">
+                    <label for="level">Level</label>
+                    <select class="form-select" aria-label="Default select example" name="skill_4_level">
+                        <option selected value="Beginner" class="others">Beginner</option>
+                        <option value="Intermediate" class="others">Intermediate</option>
+                        <option value="Advanced" class="others">Advanced</option>
+                    </select>
+                </div>
+            </div>
+          </div>
+            <br>
+          <div id="skill4" style="display: none;">
+            <h3>Skill #5</h3>
+            <div class="row">
+                <div class="col-5 Title">
+                    <input type="text" class="form-control" placeholder= "" id= "Skill" name="skill_5">
+                </div>
+                <div class="col-5">
+                    <label for="level">Level</label>
+                    <select class="form-select" aria-label="Default select example" name="skill_5_level">
+                        <option selected value="Beginner" class="others">Beginner</option>
+                        <option value="Intermediate" class="others">Intermediate</option>
+                        <option value="Advanced" class="others">Advanced</option>
+                    </select>
+                </div>
+            </div>
+          </div>
+          <div >
+            <button class="skill_button" type="button" onclick="addskill()">Add Skills</button>
+          </div>
+    </div> 
+    <div id="links">
+        <h1><span>I</span>mportant <span>L</span>inks</h1>
+        <input type="url" name="linkedin" id="linkedin" placeholder="Enter Your Linkedin Profile URL">
+        <input type="url" name="github" id="github" placeholder="Enter Your GitHub Profile URL">
+    </div>
+    <br>
+    <input type="submit" class="next_button" value="Submit">
+
+        
+</form>
+        
+
+<script type="text/javascript">
+        document.getElementById('currentlyStudying').onchange = function() {
+            document.getElementById('Degreepercentage').disabled = this.checked;
+            document.getElementById('degreeEnddate').disabled = this.checked;
+            document.getElementById('degreeEnddate').style="opacity:0.2;";
+            document.getElementById('Degreepercentage').style="opacity:0.2;";
+
+
+            
+        };
+    
+        document.getElementById('currentlyStudyingClg').onchange = function() {
+            document.getElementById('clgEnd').disabled = this.checked;
+            document.getElementById('Collegepercentage').disabled = this.checked;
+            document.getElementById('sredu').disabled = this.checked;
+            document.getElementById('Degreepercentage').disabled = this.checked;
+            document.getElementById('degreeEnddate').disabled = this.checked;
+            document.getElementById('degreeStartdate').disabled = this.checked;
+
+            document.getElementById('clgEnd').style="opacity:0.2;";
+            document.getElementById('Collegepercentage').style="opacity:0.2;" ;
+            document.getElementById('sredu').style="opacity:0.2;";
+            document.getElementById('Degreepercentage').style="opacity:0.2;";
+            document.getElementById('degreeEnddate').style="opacity:0.2;";
+            document.getElementById('degreeStartdate').style="opacity:0.2;";
+
+            
+            
+            
+        };
+    
+        document.getElementById('currentlyStudyingSchool').onchange = function() {
+            document.getElementById('schoolEnd').disabled = this.checked;
+            document.getElementById('Schoolpercentage').disabled = this.checked;
+            document.getElementById('schoolEnd').style="opacity:0.2;";
+            document.getElementById('Schoolpercentage').style="opacity:0.2;";
+
+            //Jr college
+            document.getElementById('clgEnd').disabled = this.checked;
+            document.getElementById('Collegepercentage').disabled = this.checked;
+            document.getElementById('jredu').disabled = this.checked;
+            document.getElementById('clgStart').disabled = this.checked;
+            document.getElementById('clgEnd').style="opacity:0.2;";
+            document.getElementById('Collegepercentage').style="opacity:0.2;";
+            document.getElementById('jredu').style="opacity:0.2;";
+            document.getElementById('clgStart').style="opacity:0.2;";
+
+
+            document.getElementById('sredu').disabled = this.checked;
+            document.getElementById('Degreepercentage').disabled = this.checked;
+            document.getElementById('degreeEnddate').disabled = this.checked;
+            document.getElementById('degreeStartdate').disabled = this.checked;
+            document.getElementById('sredu').style="opacity:0.2;";
+            document.getElementById('Degreepercentage').style="opacity:0.2;";
+            document.getElementById('degreeEnddate').style="opacity:0.2;";
+            document.getElementById('degreeStartdate').style="opacity:0.2;";
+
+        };
+
+        var count = 0;
+        function add(){
+            count++;
+            var formName = "form" + count;
+            var form = document.getElementById(formName);
+            form.style.display = 'block';
+            window.scrollBy(0, 600)
+
+            
+        };
+
+    document.getElementById('currentlyWorking').onchange = function() {
+        document.getElementById('End').disabled = this.checked;
+        document.getElementById('End').style="opacity:0.2;"
+
+    };
+
+
+        var no = 0;
+        function addskill(){
+            no++;
+            let formskill = "skill" + no;
+            var form = document.getElementById(formskill);
+            form.style.display = 'block';
+        }
+</script> 
+</body>
+</html>

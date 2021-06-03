@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <div class="main">
+  <section>
+    <header>
+        <a href="homepage.html"><img src="images/logo.png" class="logo"></a>
+        <h3>ONLINE RESUME BUILDER</h3>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="template.html">Build</a></li>
+        </ul>
+    </header>
+</section>
+    <div class="content">
+        <div class="textBox">
+            <h2>BUILD YOUR <span>RESUME</span></h2>
+            <h2>BUILD YOUR <span>CAREER</span></h2>
+            <p>Your resume describes your qualifications 
+                and what makes you unique. To stand out 
+                among other applicants, you need a resume that 
+                markets your strengths and match for the job.
+            </p>
+            <a href="template.html"> CREATE RESUME</a>
+        </div>
+        <div class="imgBox">
+            <img src="images/temp1.png" class="resume">
+        </div>   
+    </div>
+    <ul class="thumb">
+        <li><img src="images/temp1.png" onclick="imgSlider('images/temp1.png')" alt="resume1"></li>
+        <li><img src="images/temp2.jpg" onclick="imgSlider('images/temp2.jpg')" alt="resume2"> </li>
+        <li><img src="images/temp3.png" onclick="imgSlider('images/temp3.png')" alt="resume3"></li>
+        <li><img src="images/temp4.jpg" onclick="imgSlider('images/temp4.jpg')" alt="resume4"></li>
+    </ul>
+</div>
+    <script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.resume').src = anything;
+    }
+    </script>
+</body>
+</html>

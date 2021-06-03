@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ's</title>
+    <link rel="stylesheet" href="faq.css">
+    
+</head>
+<body>
+    <header>
+        <a href="homepage.html"><img src="images/logo.png" class="logo"></a>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="template.html">Build</a></li>
+        </ul>
+    </header>
+    <h2>FAQ's</h2>
+    <div class="accordion">
+        <div class="contentBx">
+            <div class="label">
+                What is a resume builder?
+            </div>
+            <div class="content">
+                <p>
+                    A resume builder is an online app or piece of software that provides users with interactive forms and templates that focus on resumes. The best applications of this type provide tips and suggestions to help you provide employers with the right kind of information. For example, the Zety resume builder features ready-made content tailored to the needs of specific job seekers. This makes wording each section easier in terms of communicating your value as an employee.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="contentBx">
+            <div class="label">
+                Why do I need a resume?
+            </div>
+            <div class="content">
+                <p>
+                    The purpose of a resume is to stimulate the interest of a potential employer enough to want to interview you. Resumes provide a brief overview of your skills and experience and demonstrate your aptitude for the job you are applying for. You might use a resume at job fairs and informational interviews, to answer job ads, to accompany a request for a letter of recommendation, and as part of a graduate school application.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="contentBx">
+            <div class="label">
+                What's the difference between a resume and a curriculum vitae?
+            </div>
+            <div class="content">
+                <p>
+                    A curriculum vitae (CV) is an academic resume and is used for research and college/university teaching positions. A resume is brief - usually one page - and focuses on work experience. A CV can be as long as it takes to state one's qualifications, publications, papers presented, etc. Sometimes people ask for a CV when they really want a resume. Be sure to check with the person requesting it to be certain you are using the correct version for that position.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="accordion">
+        <div class="contentBx">
+            <div class="label">
+                Can a resume be more than one page?
+            </div>
+            <div class="content">
+                <p>
+                    Yes, a resume can be more than one page, but it shouldn't be unless you have extensive experience related to your job objective. Most resumes for college students and recent graduates should fit onto one page if you clearly and concisely describe your experiences.
+                </p>
+            </div>
+        </div>
+    </div>
+        <div class="accordion">
+        <div class="contentBx">
+            <div class="label">
+                What's the best format: chronological or skills/functional?
+            </div>
+            <div class="content">
+                <p>
+                    There is no "best" format for all resumes--it depends on what you have done and what you are trying to accomplish. Usually, if you are applying to a more conservative industry (e.g. banking) or continuing along a prescribed career path in which you have gained some experience (engineering, for example), you'll want to use a chronological resume. A skills/functional resume works well if you have little work experience, are entering a career that is very different from your educational path, or are changing careers.
+            </div>
+        </div>
+    </div>
+    <div class="accordion">
+        <div class="contentBx">
+            <div class="label">
+                Should I include jobs I've had that don't relate to the job I'm seeking?
+            </div>
+            <div class="content">
+                <p>
+                    Your resume should include sufficient experience to demonstrate your ability to do the job that you are applying for and to show yourself as a person with experience in the working world. Directly related experience is considered most valuable, but unrelated jobs can also help you to show that you have acquired necessary skills. If you are unsure which jobs to include, make an appointment with a Career Counselor.
+                 </p>
+            </div>
+        </div>
+    </div>
+    <div class="accordion">
+        <div class="contentBx">
+            <div class="label">
+                Should I include my volunteer experience on my resume?
+            </div>
+            <div class="content">
+                <p>
+                    Yes! Volunteer work allows you to acquire hands on experience and develop skills in the same way that paid positions do. Future employers want to see that you have developed skills and demonstrated them in a working environment. It is not important that you were paid for your work, only that you can do it. Volunteer positions do not need to be designated as "volunteer" nor do they need to be listed separately.
+                </p> 
+            </div>
+        </div>
+    </div>
+    <div class="accordion">
+        <div class="contentBx">
+            <div class="label">
+                Do I include personal information, such as interests and hobbies?
+            </div>
+            <div class="content">
+                <p>
+                    Placing your interests and hobbies on your resume can help an employer get an idea about who you are as an individual. However, this is not an essential part of most resumes and is one of the first sections to be removed if you run out of room. Most important are activities in which you were actively involved that allowed you to develop and demonstrate transferable skills such as leadership, event organization, or financial management. Be specific about what you did while participating in these activities and avoid a "laundry list" of organizations. 
+                </p>  
+            </div>
+        </div>
+    </div>
+    <div class="accordion">
+        <div class="contentBx">
+            <div class="label">
+                Should I include my GPA on my resume?
+            </div>
+            <div class="content">
+                <p>
+                    As a student or recent graduate your academic achievement will be one of your most important assets. The basic rule of thumb is "if you've got it, flaunt it;" it is appropriate to include your GPA on your resume if it is 3.0 or above.
+                </p>  
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const accordion = document.getElementsByClassName("contentBx");
+        for(i = 0; i < accordion.length; i++){
+            accordion[i].addEventListener('click', function(){
+                this.classList.toggle('active')
+            });
+        }
+    </script>
+</body>
+</html>
