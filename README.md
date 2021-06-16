@@ -27,4 +27,10 @@ For now, we have added 2 templates only ( 1 Dark and 1 Light based theme).
 - [@dhruvjoshigit-25](https://github.com/dhruvjoshigit-25)
 
   
+## Acknowledgements
+
+ - [RESUME TEMPLATE IDEAS](https://csshint.com/html-css-resume-templates/)
+ 
+  
+  
 
